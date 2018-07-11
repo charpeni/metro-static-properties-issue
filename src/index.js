@@ -3,7 +3,10 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
 
-class App extends React.Component {
+export default class App extends React.Component {
+  static a = 'test';
+  static b = App.a;
+
   constructor() {
     super();
     this.state = {

@@ -1,0 +1,21 @@
+{
+  "presets": ["@babel/preset-react"],
+  "plugins": [[
+    "@babel/plugin-transform-modules-commonjs",
+    {strict: false, allowTopLevelThis: true}
+  ], [
+    "@babel/plugin-proposal-class-properties"
+  ]],
+  "env": {
+    "development": {
+      "plugins": [[
+        "module:metro-babel7-plugin-react-transform", {
+        "transforms": [{
+          "transform": "react-transform-hmr",
+          "imports": ["react"],
+          "locals": ["module"]
+        }]
+      }]]
+    }
+  }
+}

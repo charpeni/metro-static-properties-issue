@@ -1,0 +1,21 @@
+{
+  "name": "metro-sample-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "metro build --dev=false --minify=true --out=build/bundle.js --source-map=true --source-map-url=./bundle.map src/index.js",
+    "server": "metro serve --port=8082 --hmr=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.53",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.47",
+    "@babel/preset-react": "7.0.0-beta.47",
+    "metro": "^0.38.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-error-overlay": "^4.0.0"
+  }
+}
